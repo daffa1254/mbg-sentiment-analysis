@@ -1,0 +1,16 @@
+creation_timestamp: 1778952330718
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1778952330718
+model_id: m-6e7c1039d44f482d9d1166d795b0fcd7
+name: ABSA_MBG_XGBoost
+run_id: 3041f48efcf94e03a564d117284c6a03
+run_link: null
+source: models:/m-6e7c1039d44f482d9d1166d795b0fcd7
+status: READY
+status_message: null
+storage_location: file:///d:/freecodecamp/mbg_project/mlruns/336977329135206848/models/m-6e7c1039d44f482d9d1166d795b0fcd7/artifacts
+user_id: null
+version: 3
+workspace: default

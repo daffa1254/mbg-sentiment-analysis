@@ -1,0 +1,14 @@
+execution_duration_ms: 1442
+request_preview: '{"query": "I was charged twice for my subscription this month. Can
+  you help?", "template_variables": {"company_name": "TechCorp", "context": "Premium
+  subscriber, $29.99/month plan, charged on 1st and 3rd", "query": "I was charged
+  twice for my subscription this month."}}'
+request_time: '2026-05-06T19:50:57.621Z'
+response_preview: '{"response": "I see the duplicate charge. I''ll process a refund
+  which should appear in 3-5 business days."}'
+state: OK
+trace_id: tr-1f09b44828860bff32b4d2b70ff19d8d
+trace_location:
+  mlflow_experiment:
+    experiment_id: '121770919723884746'
+  type: MLFLOW_EXPERIMENT

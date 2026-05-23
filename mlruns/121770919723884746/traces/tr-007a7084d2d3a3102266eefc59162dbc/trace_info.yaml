@@ -1,0 +1,17 @@
+execution_duration_ms: 587
+request_preview: '{"message": "I think it''s a retrieval issue - sometimes it finds
+  irrelevant documents.", "turn": 2}'
+request_time: '2026-05-12T04:10:59.651Z'
+response_preview: '{"response": "Retrieval issues are common! Here''s how to diagnose:\n\n1.
+  **In MLflow Traces**, click on the RETRIEVER span to see:\n   - Retrieved document
+  IDs and relevance scores\n   - The query embedding used\n\n2. **Common fixes**:\n   -
+  Lower your similarity threshold (try 0.7 instead of 0.8)\n   - Experiment with chunk
+  sizes (512 tokens often works well)\n   - Try a different embedding model\n\n3.
+  **Track experiments**: Log retrieval params to compare:\n```python\nmlflow.log_params({''chunk_size'':
+  512, ''threshold'': 0.7})\n```"}'
+state: OK
+trace_id: tr-007a7084d2d3a3102266eefc59162dbc
+trace_location:
+  mlflow_experiment:
+    experiment_id: '121770919723884746'
+  type: MLFLOW_EXPERIMENT

@@ -1,0 +1,350 @@
+2026-05-15 21:36:36,721 | INFO     | train | =======================================================
+2026-05-15 21:36:36,721 | INFO     | train | STEP 1: MEMUAT DATASET
+2026-05-15 21:36:36,721 | INFO     | train | =======================================================
+2026-05-15 21:36:36,801 | INFO     | train | Data dimuat: 10999 baris, 5 kolom
+2026-05-15 21:36:36,843 | INFO     | train | Dataset final: 10998 baris
+2026-05-15 21:36:36,844 | INFO     | train | STEP 2: EXPLORATORY DATA ANALYSIS
+2026-05-15 21:36:36,844 | INFO     | train |   Rata-rata panjang  : 116.5 karakter
+2026-05-15 21:36:36,850 | INFO     | train |   Rata-rata kata     : 17.9 kata
+2026-05-15 21:36:36,850 | INFO     | train |   Komentar terpanjang: 3579 karakter
+2026-05-15 21:36:36,851 | INFO     | train |   Like count max     : 2431
+2026-05-15 21:36:36,851 | INFO     | train | Membuat grafik EDA ...
+2026-05-15 21:36:37,924 | INFO     | train | STEP 3: PREPROCESSING ...
+2026-05-15 21:36:38,062 | INFO     | src.preprocessor | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-15 21:41:25,358 | INFO     | src.preprocessor | Preprocessing: 1000/10998 selesai
+2026-05-15 21:45:16,917 | INFO     | src.preprocessor | Preprocessing: 2000/10998 selesai
+2026-05-15 21:48:22,671 | INFO     | src.preprocessor | Preprocessing: 3000/10998 selesai
+2026-05-15 21:50:57,212 | INFO     | src.preprocessor | Preprocessing: 4000/10998 selesai
+2026-05-15 21:53:24,207 | INFO     | src.preprocessor | Preprocessing: 5000/10998 selesai
+2026-05-15 21:55:38,956 | INFO     | src.preprocessor | Preprocessing: 6000/10998 selesai
+2026-05-15 21:58:16,569 | INFO     | src.preprocessor | Preprocessing: 7000/10998 selesai
+2026-05-15 22:00:31,721 | INFO     | src.preprocessor | Preprocessing: 8000/10998 selesai
+2026-05-15 22:02:28,362 | INFO     | src.preprocessor | Preprocessing: 9000/10998 selesai
+2026-05-15 22:04:45,083 | INFO     | src.preprocessor | Preprocessing: 10000/10998 selesai
+2026-05-15 22:06:31,168 | INFO     | src.preprocessor | Preprocessing selesai: 10998 teks diproses
+2026-05-15 22:06:31,481 | INFO     | train | Preprocessing selesai (1793.6s). Sisa data: 10883 baris
+2026-05-15 22:06:31,482 | INFO     | train | STEP 4: PELABELAN SENTIMEN & ASPEK ...
+2026-05-15 22:06:31,483 | INFO     | src.labeler | Memulai pelabelan sentimen & aspek ...
+2026-05-15 22:06:31,703 | INFO     | src.labeler | Distribusi sentimen: {'netral': 4282, 'positif': 3927, 'negatif': 2674}
+2026-05-15 22:06:31,705 | INFO     | src.labeler | Distribusi aspek: {'kualitas_makanan': 4861, 'umum': 3320, 'anggaran': 1075, 'program': 945, 'guru_sekolah': 665, 'distribusi': 17}
+2026-05-15 22:06:31,707 | INFO     | train | Membuat grafik distribusi label ...
+2026-05-15 22:06:32,438 | INFO     | train | Membuat grafik ABSA ...
+2026-05-15 22:06:32,950 | INFO     | train | Distribusi sentimen: {'netral': 4282, 'positif': 3927, 'negatif': 2674}
+2026-05-15 22:06:32,951 | INFO     | train | STEP 5: REKAYASA FITUR ...
+2026-05-15 22:06:32,957 | INFO     | src.feature_engineering | Membangun fitur training ...
+2026-05-15 22:06:33,917 | INFO     | src.feature_engineering | TF-IDF shape: (10883, 6000)
+2026-05-15 22:06:39,720 | INFO     | src.feature_engineering | Total fitur gabungan: 6012
+2026-05-15 22:06:39,752 | INFO     | src.feature_engineering | Kelas label: ['negatif', 'netral', 'positif']
+2026-05-15 22:06:39,860 | INFO     | train | Matriks fitur: (10883, 6012)
+2026-05-15 22:06:39,860 | INFO     | train | STEP 6: TRAIN-TEST SPLIT + SMOTE ...
+2026-05-15 22:06:45,745 | INFO     | train | Data train setelah SMOTE: 10275 baris
+2026-05-15 22:06:45,749 | INFO     | train | Distribusi kelas: {'negatif': 3425, 'netral': 3425, 'positif': 3425}
+2026-05-15 22:06:45,749 | INFO     | train | STEP 7: TRAINING ATTENTION-ENHANCED XGBOOST ...
+2026-05-15 22:14:42,559 | INFO     | train | Training selesai dalam 476.8 detik
+2026-05-15 22:14:42,586 | INFO     | train | STEP 8: EVALUASI MODEL ...
+2026-05-15 22:14:43,026 | INFO     | train | ========================================
+2026-05-15 22:14:43,026 | INFO     | train | AKURASI TEST SET : 96.37%
+2026-05-15 22:14:43,026 | INFO     | train | F1 SCORE          : 96.37%
+2026-05-15 22:14:43,026 | INFO     | train | PRECISION         : 96.38%
+2026-05-15 22:14:43,026 | INFO     | train | RECALL            : 96.37%
+2026-05-15 22:14:43,026 | INFO     | train | ========================================
+2026-05-15 22:14:43,040 | INFO     | train | 
+              precision    recall  f1-score   support
+
+     negatif     0.9639    0.9477    0.9557       535
+      netral     0.9715    0.9557    0.9635       857
+     positif     0.9554    0.9834    0.9692       785
+
+    accuracy                         0.9637      2177
+   macro avg     0.9636    0.9623    0.9628      2177
+weighted avg     0.9638    0.9637    0.9637      2177
+
+2026-05-15 22:14:43,040 | INFO     | train | Cross-Validation (5 fold) ...
+2026-05-15 22:50:05,921 | INFO     | train | CV Accuracy: 96.01% ± 0.58%
+2026-05-15 22:50:05,933 | INFO     | train | Membuat grafik evaluasi ...
+2026-05-15 22:50:06,678 | INFO     | train | Membuat WordCloud ...
+2026-05-15 22:50:08,964 | INFO     | train | STEP 9: MENYIMPAN MODEL & ARTEFAK ...
+2026-05-15 22:50:09,067 | INFO     | src.feature_engineering | FeatureBuilder disimpan → d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-15 22:50:09,382 | INFO     | train | Model disimpan -> d:\freecodecamp\mbg_project\models\xgboost_model.json
+2026-05-15 22:50:09,601 | INFO     | train | Hasil disimpan -> d:\freecodecamp\mbg_project\output\hasil_sentimen_absa.csv
+2026-05-15 22:50:09,601 | INFO     | train | STEP 10: MLFLOW LOGGING ...
+2026-05-15 22:50:10,933 | INFO     | train | MLflow Run ID: 8a9999438fc94e9a865e1d96522fb552
+2026-05-15 22:50:11,299 | INFO     | train |   Artefak di-log: 1_eda.png
+2026-05-15 22:50:11,304 | INFO     | train |   Artefak di-log: 2_label_distribution.png
+2026-05-15 22:50:11,308 | INFO     | train |   Artefak di-log: 3_evaluasi.png
+2026-05-15 22:50:11,312 | INFO     | train |   Artefak di-log: 5_wordcloud.png
+2026-05-15 22:50:11,315 | INFO     | train |   Artefak di-log: xgboost_model.json
+2026-05-15 22:50:11,319 | INFO     | train |   Artefak di-log: feature_builder.pkl
+2026-05-15 22:50:11,324 | INFO     | train |   Artefak di-log: label_encoder.pkl
+2026-05-15 22:50:11,331 | INFO     | train |   Artefak di-log: model_metadata.json
+2026-05-15 22:50:11,336 | INFO     | train |   Artefak di-log: hasil_sentimen_absa.csv
+2026-05-15 22:50:39,972 | INFO     | train |   Model di-log ke MLflow Model Registry
+2026-05-15 22:50:39,974 | INFO     | train | MLflow logging selesai. Run ID: 8a9999438fc94e9a865e1d96522fb552
+2026-05-15 22:50:39,983 | INFO     | train | =======================================================
+2026-05-15 22:50:39,983 | INFO     | train |   RINGKASAN HASIL TRAINING
+2026-05-15 22:50:39,983 | INFO     | train | =======================================================
+2026-05-15 22:50:39,985 | INFO     | train |   Dataset             : 10883 komentar
+2026-05-15 22:50:39,986 | INFO     | train |   Akurasi Test Set    : 96.37%
+2026-05-15 22:50:39,986 | INFO     | train |   F1-Score (weighted) : 96.37%
+2026-05-15 22:50:39,989 | INFO     | train |   CV Mean Accuracy    : 96.01% ± 0.58%
+2026-05-15 22:50:39,989 | INFO     | train |   Output folder       : d:\freecodecamp\mbg_project\output
+2026-05-15 22:50:39,989 | INFO     | train |   Model folder        : d:\freecodecamp\mbg_project\models
+2026-05-15 22:50:39,989 | INFO     | train |   MLflow UI           : jalankan 'mlflow ui' lalu buka http://localhost:5000
+2026-05-15 22:50:39,989 | INFO     | train | =======================================================
+2026-05-15 22:50:39,989 | INFO     | train |   ✅ TRAINING SELESAI!
+2026-05-15 22:50:39,993 | INFO     | train | =======================================================
+2026-05-16 22:48:31,121 | INFO     | train | =======================================================
+2026-05-16 22:48:31,122 | INFO     | train | STEP 1: MEMUAT DATASET
+2026-05-16 22:48:31,122 | INFO     | train | =======================================================
+2026-05-16 22:48:31,203 | INFO     | train | Data dimuat: 10999 baris, 5 kolom
+2026-05-16 22:48:31,254 | INFO     | train | Dataset final: 10998 baris
+2026-05-16 22:48:31,255 | INFO     | train | STEP 2: EXPLORATORY DATA ANALYSIS
+2026-05-16 22:48:31,255 | INFO     | train |   Rata-rata panjang  : 116.5 karakter
+2026-05-16 22:48:31,256 | INFO     | train |   Rata-rata kata     : 17.9 kata
+2026-05-16 22:48:31,257 | INFO     | train |   Komentar terpanjang: 3579 karakter
+2026-05-16 22:48:31,257 | INFO     | train |   Like count max     : 2431
+2026-05-16 22:48:31,257 | INFO     | train | Membuat grafik EDA ...
+2026-05-16 22:48:32,438 | INFO     | train | STEP 3: PREPROCESSING ...
+2026-05-16 22:48:32,588 | INFO     | src.preprocessor | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-16 22:54:48,162 | INFO     | src.preprocessor | Preprocessing: 1000/10998 selesai
+2026-05-16 22:59:24,267 | INFO     | src.preprocessor | Preprocessing: 2000/10998 selesai
+2026-05-16 23:05:48,174 | INFO     | src.preprocessor | Preprocessing: 3000/10998 selesai
+2026-05-16 23:08:46,060 | INFO     | src.preprocessor | Preprocessing: 4000/10998 selesai
+2026-05-16 23:12:04,490 | INFO     | src.preprocessor | Preprocessing: 5000/10998 selesai
+2026-05-16 23:14:39,371 | INFO     | src.preprocessor | Preprocessing: 6000/10998 selesai
+2026-05-16 23:18:38,111 | INFO     | src.preprocessor | Preprocessing: 7000/10998 selesai
+2026-05-16 23:20:55,684 | INFO     | src.preprocessor | Preprocessing: 8000/10998 selesai
+2026-05-16 23:22:54,538 | INFO     | src.preprocessor | Preprocessing: 9000/10998 selesai
+2026-05-16 23:25:15,217 | INFO     | src.preprocessor | Preprocessing: 10000/10998 selesai
+2026-05-16 23:27:07,725 | INFO     | src.preprocessor | Preprocessing selesai: 10998 teks diproses
+2026-05-16 23:27:08,032 | INFO     | train | Preprocessing selesai (2315.6s). Sisa data: 10883 baris
+2026-05-16 23:27:08,032 | INFO     | train | STEP 4: PELABELAN SENTIMEN & ASPEK ...
+2026-05-16 23:27:08,033 | INFO     | src.labeler | Memulai pelabelan sentimen & aspek ...
+2026-05-16 23:27:08,249 | INFO     | src.labeler | Distribusi sentimen: {'netral': 4282, 'positif': 3927, 'negatif': 2674}
+2026-05-16 23:27:08,250 | INFO     | src.labeler | Distribusi aspek: {'kualitas_makanan': 4861, 'umum': 3320, 'anggaran': 1075, 'program': 945, 'guru_sekolah': 665, 'distribusi': 17}
+2026-05-16 23:27:08,253 | INFO     | train | Membuat grafik distribusi label ...
+2026-05-16 23:27:08,895 | INFO     | train | Membuat grafik ABSA ...
+2026-05-16 23:27:09,370 | INFO     | train | Distribusi sentimen: {'netral': 4282, 'positif': 3927, 'negatif': 2674}
+2026-05-16 23:27:09,370 | INFO     | train | STEP 5: REKAYASA FITUR ...
+2026-05-16 23:27:09,378 | INFO     | src.feature_engineering | Membangun fitur training ...
+2026-05-16 23:27:10,336 | INFO     | src.feature_engineering | TF-IDF shape: (10883, 6000)
+2026-05-16 23:27:15,583 | INFO     | src.feature_engineering | Total fitur gabungan: 6012
+2026-05-16 23:27:15,606 | INFO     | src.feature_engineering | Kelas label: ['negatif', 'netral', 'positif']
+2026-05-16 23:27:15,725 | INFO     | train | Matriks fitur: (10883, 6012)
+2026-05-16 23:27:15,725 | INFO     | train | STEP 6: TRAIN-TEST SPLIT + SMOTE ...
+2026-05-16 23:27:21,228 | INFO     | train | Data train setelah SMOTE: 10275 baris
+2026-05-16 23:27:21,229 | INFO     | train | Distribusi kelas: {'negatif': 3425, 'netral': 3425, 'positif': 3425}
+2026-05-16 23:27:21,446 | INFO     | train | STEP 7: TRAINING ATTENTION-ENHANCED XGBOOST ...
+2026-05-16 23:37:20,639 | INFO     | train | Training selesai dalam 599.2 detik
+2026-05-16 23:37:20,680 | INFO     | train | STEP 8: EVALUASI MODEL ...
+2026-05-16 23:37:21,585 | INFO     | train | ========================================
+2026-05-16 23:37:21,585 | INFO     | train | AKURASI TEST SET : 96.37%
+2026-05-16 23:37:21,585 | INFO     | train | F1 SCORE          : 96.37%
+2026-05-16 23:37:21,586 | INFO     | train | PRECISION         : 96.38%
+2026-05-16 23:37:21,587 | INFO     | train | RECALL            : 96.37%
+2026-05-16 23:37:21,587 | INFO     | train | ========================================
+2026-05-16 23:37:21,623 | INFO     | train | 
+              precision    recall  f1-score   support
+
+     negatif     0.9639    0.9477    0.9557       535
+      netral     0.9715    0.9557    0.9635       857
+     positif     0.9554    0.9834    0.9692       785
+
+    accuracy                         0.9637      2177
+   macro avg     0.9636    0.9623    0.9628      2177
+weighted avg     0.9638    0.9637    0.9637      2177
+
+2026-05-16 23:37:21,624 | INFO     | train | Cross-Validation (5 fold) ...
+2026-05-17 00:24:29,915 | INFO     | train | CV Accuracy: 96.01% ± 0.58%
+2026-05-17 00:24:29,927 | INFO     | train | Membuat grafik evaluasi ...
+2026-05-17 00:24:31,244 | INFO     | train | Membuat WordCloud ...
+2026-05-17 00:24:34,738 | INFO     | train | STEP 9: MENYIMPAN MODEL & ARTEFAK ...
+2026-05-17 00:24:34,883 | INFO     | src.feature_engineering | FeatureBuilder disimpan → d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-17 00:24:35,178 | INFO     | train | Model disimpan -> d:\freecodecamp\mbg_project\models\xgboost_model.json
+2026-05-17 00:24:35,556 | INFO     | train | Hasil disimpan -> d:\freecodecamp\mbg_project\output\hasil_sentimen_absa.csv
+2026-05-17 00:24:35,556 | INFO     | train | STEP 10: MLFLOW LOGGING ...
+2026-05-17 00:24:37,155 | INFO     | train | MLflow Run ID: 3041f48efcf94e03a564d117284c6a03
+2026-05-17 00:24:37,762 | INFO     | train |   Artefak di-log: 1_eda.png
+2026-05-17 00:24:37,769 | INFO     | train |   Artefak di-log: 2_label_distribution.png
+2026-05-17 00:24:37,782 | INFO     | train |   Artefak di-log: 3_evaluasi.png
+2026-05-17 00:24:37,789 | INFO     | train |   Artefak di-log: 5_wordcloud.png
+2026-05-17 00:24:37,799 | INFO     | train |   Artefak di-log: xgboost_model.json
+2026-05-17 00:24:37,814 | INFO     | train |   Artefak di-log: feature_builder.pkl
+2026-05-17 00:24:37,823 | INFO     | train |   Artefak di-log: label_encoder.pkl
+2026-05-17 00:24:37,828 | INFO     | train |   Artefak di-log: model_metadata.json
+2026-05-17 00:24:37,837 | INFO     | train |   Artefak di-log: hasil_sentimen_absa.csv
+2026-05-17 00:25:30,969 | INFO     | train |   Model di-log ke MLflow Model Registry
+2026-05-17 00:25:30,971 | INFO     | train | MLflow logging selesai. Run ID: 3041f48efcf94e03a564d117284c6a03
+2026-05-17 00:25:30,989 | INFO     | train | =======================================================
+2026-05-17 00:25:30,989 | INFO     | train |   RINGKASAN HASIL TRAINING
+2026-05-17 00:25:30,989 | INFO     | train | =======================================================
+2026-05-17 00:25:30,992 | INFO     | train |   Dataset             : 10883 komentar
+2026-05-17 00:25:30,994 | INFO     | train |   Akurasi Test Set    : 96.37%
+2026-05-17 00:25:30,995 | INFO     | train |   F1-Score (weighted) : 96.37%
+2026-05-17 00:25:31,000 | INFO     | train |   CV Mean Accuracy    : 96.01% ± 0.58%
+2026-05-17 00:25:31,000 | INFO     | train |   Output folder       : d:\freecodecamp\mbg_project\output
+2026-05-17 00:25:31,000 | INFO     | train |   Model folder        : d:\freecodecamp\mbg_project\models
+2026-05-17 00:25:31,000 | INFO     | train |   MLflow UI           : jalankan 'mlflow ui' lalu buka http://localhost:5000
+2026-05-17 00:25:31,000 | INFO     | train | =======================================================
+2026-05-17 00:25:31,000 | INFO     | train |   ✅ TRAINING SELESAI!
+2026-05-17 00:25:31,009 | INFO     | train | =======================================================
+2026-05-18 22:04:49,027 | INFO     | train | =======================================================
+2026-05-18 22:04:49,028 | INFO     | train | STEP 1: MEMUAT DATASET
+2026-05-18 22:04:49,028 | INFO     | train | =======================================================
+2026-05-18 22:04:49,076 | INFO     | train | Data dimuat: 10999 baris, 5 kolom
+2026-05-18 22:04:49,103 | INFO     | train | Dataset final: 10998 baris
+2026-05-18 22:04:49,104 | INFO     | train | STEP 2: EXPLORATORY DATA ANALYSIS
+2026-05-18 22:04:49,104 | INFO     | train |   Rata-rata panjang  : 116.5 karakter
+2026-05-18 22:04:49,105 | INFO     | train |   Rata-rata kata     : 17.9 kata
+2026-05-18 22:04:49,105 | INFO     | train |   Komentar terpanjang: 3579 karakter
+2026-05-18 22:04:49,105 | INFO     | train |   Like count max     : 2431
+2026-05-18 22:04:49,106 | INFO     | train | Membuat grafik EDA ...
+2026-05-18 22:04:49,759 | INFO     | train | STEP 3: PREPROCESSING ...
+2026-05-18 22:04:49,859 | INFO     | src.preprocessor | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-18 22:09:23,574 | INFO     | train | =======================================================
+2026-05-18 22:09:23,576 | INFO     | train | STEP 1: MEMUAT DATASET
+2026-05-18 22:09:23,576 | INFO     | train | =======================================================
+2026-05-18 22:09:23,621 | INFO     | train | Data dimuat: 10999 baris, 5 kolom
+2026-05-18 22:09:23,649 | INFO     | train | Dataset final: 10998 baris
+2026-05-18 22:09:23,649 | INFO     | train | STEP 2: EXPLORATORY DATA ANALYSIS
+2026-05-18 22:09:23,649 | INFO     | train |   Rata-rata panjang  : 116.5 karakter
+2026-05-18 22:09:23,650 | INFO     | train |   Rata-rata kata     : 17.9 kata
+2026-05-18 22:09:23,650 | INFO     | train |   Komentar terpanjang: 3579 karakter
+2026-05-18 22:09:23,650 | INFO     | train |   Like count max     : 2431
+2026-05-18 22:09:23,651 | INFO     | train | Membuat grafik EDA ...
+2026-05-18 22:09:24,211 | INFO     | train | STEP 3: PREPROCESSING ...
+2026-05-18 22:09:24,287 | INFO     | src.preprocessor | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-18 22:13:32,578 | INFO     | src.preprocessor | Preprocessing: 1000/10998 selesai
+2026-05-18 22:18:05,545 | INFO     | src.preprocessor | Preprocessing: 2000/10998 selesai
+2026-05-18 22:21:40,791 | INFO     | src.preprocessor | Preprocessing: 3000/10998 selesai
+2026-05-18 22:24:38,670 | INFO     | src.preprocessor | Preprocessing: 4000/10998 selesai
+2026-05-18 22:27:25,138 | INFO     | src.preprocessor | Preprocessing: 5000/10998 selesai
+2026-05-18 22:29:51,427 | INFO     | src.preprocessor | Preprocessing: 6000/10998 selesai
+2026-05-18 22:32:16,764 | INFO     | src.preprocessor | Preprocessing: 7000/10998 selesai
+2026-05-18 22:34:01,305 | INFO     | src.preprocessor | Preprocessing: 8000/10998 selesai
+2026-05-18 22:35:32,355 | INFO     | src.preprocessor | Preprocessing: 9000/10998 selesai
+2026-05-18 22:37:18,695 | INFO     | src.preprocessor | Preprocessing: 10000/10998 selesai
+2026-05-18 22:38:43,192 | INFO     | src.preprocessor | Preprocessing selesai: 10998 teks diproses
+2026-05-18 22:38:43,428 | INFO     | train | Preprocessing selesai (1759.2s). Sisa data: 10883 baris
+2026-05-18 22:38:43,429 | INFO     | train | STEP 4: PELABELAN SENTIMEN & ASPEK ...
+2026-05-18 22:38:43,430 | INFO     | src.labeler | Memulai pelabelan sentimen & aspek ...
+2026-05-18 22:38:43,626 | INFO     | src.labeler | Distribusi sentimen: {'netral': 4250, 'positif': 3900, 'negatif': 2733}
+2026-05-18 22:38:43,627 | INFO     | src.labeler | Distribusi aspek: {'kualitas_makanan': 4861, 'umum': 3320, 'anggaran': 1075, 'program': 945, 'guru_sekolah': 665, 'distribusi': 17}
+2026-05-18 22:38:43,628 | INFO     | train | Membuat grafik distribusi label ...
+2026-05-18 22:38:44,340 | INFO     | train | Membuat grafik ABSA ...
+2026-05-18 22:38:45,008 | INFO     | train | Distribusi sentimen: {'netral': 4250, 'positif': 3900, 'negatif': 2733}
+2026-05-18 22:45:57,961 | WARNING  | train | Auto-detect sep failed: 'charmap' codec can't decode byte 0x8f in position 4384: character maps to <undefined> — falling back and skipping bad lines.
+2026-05-18 23:29:47,855 | INFO     | train | Logging aktif → d:\freecodecamp\mbg_project\logs\train.log
+2026-05-19 22:35:26,036 | INFO     | train | Logging aktif → d:\freecodecamp\mbg_project\logs\train.log
+2026-05-19 22:35:38,512 | INFO     | train | Data dimuat: 10999 baris, 5 kolom
+2026-05-19 22:35:38,563 | INFO     | train | Dataset final: 10998 baris
+2026-05-19 22:35:46,780 | INFO     | train | STEP 2: EXPLORATORY DATA ANALYSIS
+2026-05-19 22:35:46,782 | INFO     | train |   Rata-rata panjang  : 116.5 karakter
+2026-05-19 22:35:46,784 | INFO     | train |   Rata-rata kata     : 17.9 kata
+2026-05-19 22:35:46,785 | INFO     | train |   Komentar terpanjang: 3579 karakter
+2026-05-19 22:35:46,787 | INFO     | train |   Like count max     : 2431
+2026-05-19 22:35:46,787 | INFO     | train | Membuat grafik EDA ...
+2026-05-19 22:35:50,641 | INFO     | train | STEP 3: PREPROCESSING ...
+2026-05-19 22:35:50,796 | INFO     | src.preprocessor | Preprocessor siap. Stopword: 827 kata, Stemmer: Sastrawi
+2026-05-19 22:35:51,522 | INFO     | src.preprocessor | Preprocessing: 1000/10998 selesai
+2026-05-19 22:35:52,151 | INFO     | src.preprocessor | Preprocessing: 2000/10998 selesai
+2026-05-19 22:35:52,631 | INFO     | src.preprocessor | Preprocessing: 3000/10998 selesai
+2026-05-19 22:35:53,045 | INFO     | src.preprocessor | Preprocessing: 4000/10998 selesai
+2026-05-19 22:35:53,410 | INFO     | src.preprocessor | Preprocessing: 5000/10998 selesai
+2026-05-19 22:35:53,780 | INFO     | src.preprocessor | Preprocessing: 6000/10998 selesai
+2026-05-19 22:35:54,173 | INFO     | src.preprocessor | Preprocessing: 7000/10998 selesai
+2026-05-19 22:35:54,491 | INFO     | src.preprocessor | Preprocessing: 8000/10998 selesai
+2026-05-19 22:35:54,825 | INFO     | src.preprocessor | Preprocessing: 9000/10998 selesai
+2026-05-19 22:35:55,187 | INFO     | src.preprocessor | Preprocessing: 10000/10998 selesai
+2026-05-19 22:35:55,439 | INFO     | src.preprocessor | Preprocessing selesai: 10998 teks diproses
+2026-05-19 22:35:55,465 | INFO     | train | Preprocessing selesai (4.8s). Sisa data: 10848 baris
+2026-05-19 22:38:10,975 | INFO     | train | STEP 4: PELABELAN SENTIMEN & ASPEK ...
+2026-05-19 22:38:10,978 | INFO     | src.labeler | Memulai pelabelan sentimen & aspek ...
+2026-05-19 22:38:11,154 | INFO     | src.labeler | Distribusi sentimen: {'netral': 4343, 'positif': 3658, 'negatif': 2847}
+2026-05-19 22:38:11,155 | INFO     | src.labeler | Distribusi aspek: {'kualitas_makanan': 4851, 'umum': 3306, 'anggaran': 1084, 'program': 931, 'guru_sekolah': 667, 'distribusi': 9}
+2026-05-19 22:38:11,158 | INFO     | train | Distribusi sentimen: {'netral': 4343, 'positif': 3658, 'negatif': 2847}
+2026-05-19 22:38:11,159 | INFO     | train | Membuat grafik distribusi label ...
+2026-05-19 22:38:11,688 | INFO     | train | Membuat grafik ABSA ...
+2026-05-19 22:38:19,605 | INFO     | train | STEP 5: REKAYASA FITUR ...
+2026-05-19 22:38:19,607 | INFO     | src.feature_engineering | Membangun fitur training ...
+2026-05-19 22:38:20,478 | INFO     | src.feature_engineering | TF-IDF shape: (10848, 6000)
+2026-05-19 22:38:25,748 | INFO     | src.feature_engineering | Total fitur gabungan: 6012
+2026-05-19 22:38:25,788 | INFO     | src.feature_engineering | Kelas label: ['negatif', 'netral', 'positif']
+2026-05-19 22:38:25,915 | INFO     | train | Matriks fitur: (10848, 6012)
+2026-05-19 22:38:33,080 | INFO     | train | STEP 6: TRAIN-TEST SPLIT + SMOTE ...
+2026-05-19 22:38:43,037 | INFO     | train | Data train setelah SMOTE: 10422 baris
+2026-05-19 22:38:43,064 | INFO     | train | Distribusi kelas: {'positif': 3474, 'netral': 3474, 'negatif': 3474}
+2026-05-19 22:38:43,112 | INFO     | train | STEP 7: TRAINING ATTENTION-ENHANCED XGBOOST ...
+2026-05-19 22:38:43,114 | INFO     | train | Parameter XGBoost: {'n_estimators': 300, 'max_depth': 6, 'learning_rate': 0.08, 'subsample': 0.85, 'colsample_bytree': 0.75, 'min_child_weight': 3, 'gamma': 0.1, 'reg_alpha': 0.1, 'reg_lambda': 1.5, 'eval_metric': 'mlogloss', 'random_state': 42, 'n_jobs': 1, 'tree_method': 'hist'}
+2026-05-19 22:50:40,073 | INFO     | train | Training selesai dalam 716.9 detik
+2026-05-19 22:50:40,445 | INFO     | train | STEP 8: EVALUASI MODEL ...
+2026-05-19 22:50:41,277 | INFO     | train | Cross-Validation (5 fold) ...
+2026-05-19 23:08:27,681 | INFO     | train | CV Accuracy: 96.14% ± 0.90%
+2026-05-19 23:08:27,718 | INFO     | train | Membuat grafik evaluasi ...
+2026-05-19 23:08:29,912 | INFO     | train | Membuat WordCloud ...
+2026-05-19 23:08:36,150 | INFO     | train | STEP 9: MENYIMPAN MODEL & ARTEFAK ...
+2026-05-19 23:08:36,261 | INFO     | src.feature_engineering | FeatureBuilder disimpan → d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-19 23:08:36,378 | INFO     | train | Model disimpan → d:\freecodecamp\mbg_project\models\xgboost_model.json
+2026-05-19 23:08:36,379 | INFO     | train | Hasil CSV     → d:\freecodecamp\mbg_project\output\hasil_sentimen_absa.csv
+2026-05-22 23:48:45,953 | INFO     | train | Logging aktif → d:\freecodecamp\mbg_project\logs\train.log
+2026-05-22 23:50:45,761 | INFO     | train | Data dimuat: 10999 baris, 5 kolom
+2026-05-22 23:50:45,801 | INFO     | train | Dataset final: 10998 baris
+2026-05-22 23:53:39,931 | INFO     | train | STEP 2: EXPLORATORY DATA ANALYSIS
+2026-05-22 23:53:39,984 | INFO     | train |   Rata-rata panjang  : 116.5 karakter
+2026-05-22 23:53:40,000 | INFO     | train |   Rata-rata kata     : 17.9 kata
+2026-05-22 23:53:40,004 | INFO     | train |   Komentar terpanjang: 3579 karakter
+2026-05-22 23:53:40,009 | INFO     | train |   Like count max     : 2431
+2026-05-22 23:53:40,011 | INFO     | train | Membuat grafik EDA ...
+2026-05-22 23:53:44,796 | INFO     | train | STEP 3: PREPROCESSING ...
+2026-05-22 23:53:45,056 | INFO     | src.preprocessor | Preprocessor siap. Stopword: 827 kata, Stemmer: Sastrawi
+2026-05-22 23:53:45,729 | INFO     | src.preprocessor | Preprocessing: 1000/10998 selesai
+2026-05-22 23:53:46,224 | INFO     | src.preprocessor | Preprocessing: 2000/10998 selesai
+2026-05-22 23:53:46,645 | INFO     | src.preprocessor | Preprocessing: 3000/10998 selesai
+2026-05-22 23:53:47,012 | INFO     | src.preprocessor | Preprocessing: 4000/10998 selesai
+2026-05-22 23:53:47,378 | INFO     | src.preprocessor | Preprocessing: 5000/10998 selesai
+2026-05-22 23:53:47,670 | INFO     | src.preprocessor | Preprocessing: 6000/10998 selesai
+2026-05-22 23:53:48,019 | INFO     | src.preprocessor | Preprocessing: 7000/10998 selesai
+2026-05-22 23:53:48,341 | INFO     | src.preprocessor | Preprocessing: 8000/10998 selesai
+2026-05-22 23:53:48,641 | INFO     | src.preprocessor | Preprocessing: 9000/10998 selesai
+2026-05-22 23:53:48,965 | INFO     | src.preprocessor | Preprocessing: 10000/10998 selesai
+2026-05-22 23:53:49,239 | INFO     | src.preprocessor | Preprocessing selesai: 10998 teks diproses
+2026-05-22 23:53:49,294 | INFO     | train | Preprocessing selesai (4.5s). Sisa data: 10848 baris
+2026-05-22 23:54:23,683 | INFO     | train | STEP 4: PELABELAN SENTIMEN & ASPEK ...
+2026-05-22 23:54:23,685 | INFO     | src.labeler | Memulai pelabelan sentimen & aspek ...
+2026-05-22 23:54:23,819 | INFO     | src.labeler | Distribusi sentimen: {'netral': 4343, 'positif': 3658, 'negatif': 2847}
+2026-05-22 23:54:23,821 | INFO     | src.labeler | Distribusi aspek: {'kualitas_makanan': 4851, 'umum': 3306, 'anggaran': 1084, 'program': 931, 'guru_sekolah': 667, 'distribusi': 9}
+2026-05-22 23:54:23,824 | INFO     | train | Distribusi sentimen: {'netral': 4343, 'positif': 3658, 'negatif': 2847}
+2026-05-22 23:54:23,825 | INFO     | train | Membuat grafik distribusi label ...
+2026-05-22 23:54:24,203 | INFO     | train | Membuat grafik ABSA ...
+2026-05-22 23:54:28,803 | INFO     | train | STEP 5: REKAYASA FITUR ...
+2026-05-22 23:54:28,807 | INFO     | src.feature_engineering | Membangun fitur training ...
+2026-05-22 23:54:29,617 | INFO     | src.feature_engineering | TF-IDF shape: (10848, 6000)
+2026-05-22 23:54:35,039 | INFO     | src.feature_engineering | Total fitur gabungan: 6012
+2026-05-22 23:54:35,084 | INFO     | src.feature_engineering | Kelas label: ['negatif', 'netral', 'positif']
+2026-05-22 23:54:35,204 | INFO     | train | Matriks fitur: (10848, 6012)
+2026-05-22 23:54:35,275 | INFO     | train | STEP 6: TRAIN-TEST SPLIT + SMOTE ...
+2026-05-22 23:54:46,151 | INFO     | train | Data train setelah SMOTE: 10422 baris
+2026-05-22 23:54:46,173 | INFO     | train | Distribusi kelas: {'positif': 3474, 'netral': 3474, 'negatif': 3474}
+2026-05-22 23:54:46,216 | INFO     | train | STEP 7: TRAINING ATTENTION-ENHANCED XGBOOST ...
+2026-05-22 23:54:46,219 | INFO     | train | Parameter XGBoost: {'n_estimators': 300, 'max_depth': 6, 'learning_rate': 0.08, 'subsample': 0.85, 'colsample_bytree': 0.75, 'min_child_weight': 3, 'gamma': 0.1, 'reg_alpha': 0.1, 'reg_lambda': 1.5, 'eval_metric': 'mlogloss', 'random_state': 42, 'n_jobs': 1, 'tree_method': 'hist'}
+2026-05-23 00:04:17,973 | INFO     | train | Training selesai dalam 571.7 detik
+2026-05-23 00:04:18,353 | INFO     | train | STEP 8: EVALUASI MODEL ...
+2026-05-23 00:04:18,954 | INFO     | train | Cross-Validation (5 fold) ...
+2026-05-23 00:15:20,185 | INFO     | train | CV Accuracy: 96.14% ± 0.90%
+2026-05-23 00:15:20,255 | INFO     | train | Membuat grafik evaluasi ...
+2026-05-23 00:15:21,545 | INFO     | train | Membuat WordCloud ...
+2026-05-23 00:15:28,341 | INFO     | train | STEP 9: MENYIMPAN MODEL & ARTEFAK ...
+2026-05-23 00:15:28,455 | INFO     | src.feature_engineering | FeatureBuilder disimpan → d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-23 00:15:28,595 | INFO     | train | Model disimpan → d:\freecodecamp\mbg_project\models\xgboost_model.json
+2026-05-23 00:15:28,596 | INFO     | train | Hasil CSV     → d:\freecodecamp\mbg_project\output\hasil_sentimen_absa.csv
+2026-05-23 00:15:29,709 | INFO     | train | MLflow Run ID: 675ba258e1da4b3387c928e422e7b20f
+2026-05-23 00:15:30,162 | INFO     | train |   Artefak di-log: 1_eda.png
+2026-05-23 00:15:30,168 | INFO     | train |   Artefak di-log: 2_label_distribution.png
+2026-05-23 00:15:30,175 | INFO     | train |   Artefak di-log: 3_evaluasi.png
+2026-05-23 00:15:30,186 | INFO     | train |   Artefak di-log: 5_wordcloud.png
+2026-05-23 00:15:30,194 | INFO     | train |   Artefak di-log: xgboost_model.json
+2026-05-23 00:15:30,202 | INFO     | train |   Artefak di-log: feature_builder.pkl
+2026-05-23 00:15:30,208 | INFO     | train |   Artefak di-log: label_encoder.pkl
+2026-05-23 00:15:30,216 | INFO     | train |   Artefak di-log: model_metadata.json
+2026-05-23 00:15:30,225 | INFO     | train |   Artefak di-log: hasil_sentimen_absa.csv
+2026-05-23 00:15:52,540 | INFO     | train | Model di-log ke MLflow Model Registry

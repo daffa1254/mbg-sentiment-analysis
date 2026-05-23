@@ -1,0 +1,11 @@
+execution_duration_ms: 496
+request_preview: Summarize what is being said in this audio.
+request_time: '2026-05-11T13:46:59.647Z'
+response_preview: The audio contains a brief 440Hz sine tone (concert A), commonly
+  used as a calibration or test signal in audio systems.
+state: OK
+trace_id: tr-545d4dd88838f72fe00cc51e17f8a94b
+trace_location:
+  mlflow_experiment:
+    experiment_id: '121770919723884746'
+  type: MLFLOW_EXPERIMENT

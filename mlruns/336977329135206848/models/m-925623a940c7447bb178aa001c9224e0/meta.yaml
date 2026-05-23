@@ -1,0 +1,10 @@
+artifact_location: file:///d:/freecodecamp/mbg_project/mlruns/336977329135206848/models/m-925623a940c7447bb178aa001c9224e0/artifacts
+creation_timestamp: 1778860211402
+experiment_id: '336977329135206848'
+last_updated_timestamp: 1778860239505
+model_id: m-925623a940c7447bb178aa001c9224e0
+model_type: null
+name: xgboost_model
+source_run_id: 8a9999438fc94e9a865e1d96522fb552
+status: 2
+status_message: null

@@ -1,0 +1,12 @@
+execution_duration_ms: 1604
+request_preview: '{"message": "Yes, I want to deploy to Kubernetes. What''s the process?",
+  "turn": 2}'
+request_time: '2026-05-09T01:11:58.311Z'
+response_preview: '{"response": "You can build a Docker image with MLflow and deploy
+  it to Kubernetes using standard kubectl commands."}'
+state: OK
+trace_id: tr-cf7f42ccb4e0361db62d11e4194f96fc
+trace_location:
+  mlflow_experiment:
+    experiment_id: '121770919723884746'
+  type: MLFLOW_EXPERIMENT

@@ -1,0 +1,279 @@
+2026-05-12 16:33:06,192 | INFO     | Memuat model dari disk ...
+2026-05-12 16:33:07,870 | INFO     |   ✔ XGBoost model dimuat
+2026-05-12 16:33:07,940 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-12 16:33:07,940 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-12 16:33:07,966 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-12 16:33:07,982 | INFO     |   ✔ Metadata dimuat (akurasi: 96.00%)
+2026-05-12 16:33:08,102 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-12 16:33:08,102 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-12 16:33:08,103 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-12 16:33:08,104 | INFO     | =======================================================
+2026-05-12 16:33:08,105 | INFO     |   ABSA MBG API Server
+2026-05-12 16:33:08,105 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-12 16:33:08,105 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-12 16:33:08,105 | INFO     | =======================================================
+2026-05-12 16:33:08,161 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.216:5000
+2026-05-12 16:33:08,161 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-13 01:17:43,647 | INFO     | Memuat model dari disk ...
+2026-05-13 01:17:45,730 | INFO     |   ✔ XGBoost model dimuat
+2026-05-13 01:17:45,795 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-13 01:17:45,795 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-13 01:17:45,837 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-13 01:17:45,866 | INFO     |   ✔ Metadata dimuat (akurasi: 96.00%)
+2026-05-13 01:17:46,031 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-13 01:17:46,031 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-13 01:17:46,032 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-13 01:17:46,035 | INFO     | =======================================================
+2026-05-13 01:17:46,036 | INFO     |   ABSA MBG API Server
+2026-05-13 01:17:46,036 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-13 01:17:46,036 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-13 01:17:46,036 | INFO     | =======================================================
+2026-05-13 01:17:46,098 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.72:5000
+2026-05-13 01:17:46,098 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-13 01:18:07,316 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-13 01:18:07,327 | INFO     | 127.0.0.1 - - [13/May/2026 01:18:07] "GET / HTTP/1.1" 200 -
+2026-05-13 01:18:07,493 | INFO     | REQUEST GET /favicon.ico dari 127.0.0.1
+2026-05-13 01:18:07,494 | INFO     | 127.0.0.1 - - [13/May/2026 01:18:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-13 01:19:12,975 | INFO     | REQUEST GET / dari 192.168.101.72
+2026-05-13 01:19:12,989 | INFO     | 192.168.101.72 - - [13/May/2026 01:19:12] "GET / HTTP/1.1" 200 -
+2026-05-13 01:19:13,113 | INFO     | REQUEST GET /favicon.ico dari 192.168.101.72
+2026-05-13 01:19:13,115 | INFO     | 192.168.101.72 - - [13/May/2026 01:19:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-13 01:20:49,960 | INFO     | REQUEST GET /predict/batch dari 127.0.0.1
+2026-05-13 01:20:49,968 | INFO     | 127.0.0.1 - - [13/May/2026 01:20:49] "[31m[1mGET /predict/batch HTTP/1.1[0m" 405 -
+2026-05-13 01:20:50,195 | INFO     | REQUEST GET /favicon.ico dari 127.0.0.1
+2026-05-13 01:20:50,196 | INFO     | 127.0.0.1 - - [13/May/2026 01:20:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-13 01:22:21,441 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-13 01:22:21,451 | INFO     | 127.0.0.1 - - [13/May/2026 01:22:21] "GET / HTTP/1.1" 200 -
+2026-05-13 01:22:21,615 | INFO     | REQUEST GET /favicon.ico dari 127.0.0.1
+2026-05-13 01:22:21,616 | INFO     | 127.0.0.1 - - [13/May/2026 01:22:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-13 01:23:25,613 | INFO     | REQUEST GET /docs dari 127.0.0.1
+2026-05-13 01:23:25,621 | INFO     | 127.0.0.1 - - [13/May/2026 01:23:25] "GET /docs HTTP/1.1" 200 -
+2026-05-13 01:23:25,743 | INFO     | REQUEST GET /favicon.ico dari 127.0.0.1
+2026-05-13 01:23:25,745 | INFO     | 127.0.0.1 - - [13/May/2026 01:23:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-13 01:27:50,021 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-13 01:27:50,032 | INFO     | 127.0.0.1 - - [13/May/2026 01:27:50] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-13 01:28:20,940 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-13 01:28:20,940 | INFO     | 127.0.0.1 - - [13/May/2026 01:28:20] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-13 01:31:02,600 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-13 01:31:02,610 | INFO     | 127.0.0.1 - - [13/May/2026 01:31:02] "GET / HTTP/1.1" 200 -
+2026-05-13 01:35:11,931 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-13 01:35:14,049 | INFO     | Prediksi: sentimen=negatif aspek=kualitas_makanan conf=0.999
+2026-05-13 01:35:14,061 | INFO     | 127.0.0.1 - - [13/May/2026 01:35:14] "POST /predict HTTP/1.1" 200 -
+2026-05-13 01:35:57,521 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-13 01:35:57,585 | INFO     | Prediksi: sentimen=netral aspek=kualitas_makanan conf=0.935
+2026-05-13 01:35:57,588 | INFO     | 127.0.0.1 - - [13/May/2026 01:35:57] "POST /predict HTTP/1.1" 200 -
+2026-05-13 01:36:42,838 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-13 01:36:45,111 | INFO     | Prediksi: sentimen=netral aspek=kualitas_makanan conf=0.999
+2026-05-13 01:36:45,111 | INFO     | 127.0.0.1 - - [13/May/2026 01:36:45] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:03:49,369 | INFO     | Memuat model dari disk ...
+2026-05-15 18:03:52,554 | INFO     |   ✔ XGBoost model dimuat
+2026-05-15 18:03:52,637 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-15 18:03:52,637 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-15 18:03:52,676 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-15 18:03:52,695 | INFO     |   ✔ Metadata dimuat (akurasi: 96.00%)
+2026-05-15 18:03:52,838 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-15 18:03:52,838 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-15 18:03:52,839 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-15 18:03:52,840 | INFO     | =======================================================
+2026-05-15 18:03:52,841 | INFO     |   ABSA MBG API Server
+2026-05-15 18:03:52,841 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-15 18:03:52,841 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-15 18:03:52,841 | INFO     | =======================================================
+2026-05-15 18:03:52,900 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.216:5000
+2026-05-15 18:03:52,900 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-15 18:04:39,465 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-15 18:04:39,513 | INFO     | 127.0.0.1 - - [15/May/2026 18:04:39] "GET / HTTP/1.1" 200 -
+2026-05-15 18:04:40,420 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-15 18:04:40,420 | INFO     | 127.0.0.1 - - [15/May/2026 18:04:40] "GET / HTTP/1.1" 200 -
+2026-05-15 18:04:41,789 | INFO     | REQUEST GET /favicon.ico dari 127.0.0.1
+2026-05-15 18:04:41,799 | INFO     | 127.0.0.1 - - [15/May/2026 18:04:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-15 18:05:28,763 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:05:28,774 | INFO     | 127.0.0.1 - - [15/May/2026 18:05:28] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 18:06:22,925 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:06:22,946 | INFO     | 127.0.0.1 - - [15/May/2026 18:06:22] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 18:06:51,548 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:06:51,549 | INFO     | 127.0.0.1 - - [15/May/2026 18:06:51] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 18:10:37,447 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-15 18:10:37,476 | INFO     | 127.0.0.1 - - [15/May/2026 18:10:37] "GET / HTTP/1.1" 200 -
+2026-05-15 18:11:04,005 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:11:04,036 | INFO     | 127.0.0.1 - - [15/May/2026 18:11:04] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 18:12:26,249 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:12:26,277 | INFO     | 127.0.0.1 - - [15/May/2026 18:12:26] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 18:12:52,363 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:12:56,519 | INFO     | Prediksi: sentimen=negatif aspek=kualitas_makanan conf=0.998
+2026-05-15 18:12:56,544 | INFO     | 127.0.0.1 - - [15/May/2026 18:12:56] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:14:06,080 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:14:06,589 | INFO     | Prediksi: sentimen=netral aspek=distribusi conf=0.978
+2026-05-15 18:14:06,602 | INFO     | 127.0.0.1 - - [15/May/2026 18:14:06] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:14:57,020 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:14:57,338 | INFO     | Prediksi: sentimen=negatif aspek=umum conf=0.999
+2026-05-15 18:14:57,347 | INFO     | 127.0.0.1 - - [15/May/2026 18:14:57] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:52:16,695 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:52:16,997 | INFO     | Prediksi: sentimen=netral aspek=kualitas_makanan conf=0.998
+2026-05-15 18:52:17,003 | INFO     | 127.0.0.1 - - [15/May/2026 18:52:17] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:53:16,394 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:53:16,472 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=1.000
+2026-05-15 18:53:16,474 | INFO     | 127.0.0.1 - - [15/May/2026 18:53:16] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:53:45,343 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:53:45,371 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=1.000
+2026-05-15 18:53:45,371 | INFO     | 127.0.0.1 - - [15/May/2026 18:53:45] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:54:34,459 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:54:35,299 | INFO     | Prediksi: sentimen=negatif aspek=program conf=1.000
+2026-05-15 18:54:35,301 | INFO     | 127.0.0.1 - - [15/May/2026 18:54:35] "POST /predict HTTP/1.1" 200 -
+2026-05-15 18:55:14,307 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 18:55:16,066 | INFO     | Prediksi: sentimen=netral aspek=program conf=0.999
+2026-05-15 18:55:16,068 | INFO     | 127.0.0.1 - - [15/May/2026 18:55:16] "POST /predict HTTP/1.1" 200 -
+2026-05-15 22:51:23,387 | INFO     | Memuat model dari disk ...
+2026-05-15 22:51:25,506 | INFO     |   ✔ XGBoost model dimuat
+2026-05-15 22:51:25,569 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-15 22:51:25,569 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-15 22:51:25,610 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-15 22:51:25,639 | INFO     |   ✔ Metadata dimuat (akurasi: 96.37%)
+2026-05-15 22:51:25,774 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-15 22:51:25,775 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-15 22:51:25,776 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-15 22:51:25,778 | INFO     | =======================================================
+2026-05-15 22:51:25,778 | INFO     |   ABSA MBG API Server
+2026-05-15 22:51:25,778 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-15 22:51:25,778 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-15 22:51:25,778 | INFO     | =======================================================
+2026-05-15 22:51:25,841 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.216:5000
+2026-05-15 22:51:25,842 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-15 22:52:15,191 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:52:15,221 | INFO     | 127.0.0.1 - - [15/May/2026 22:52:15] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 22:52:55,396 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-15 22:52:55,500 | INFO     | 127.0.0.1 - - [15/May/2026 22:52:55] "GET / HTTP/1.1" 200 -
+2026-05-15 22:53:00,319 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:53:00,325 | INFO     | 127.0.0.1 - - [15/May/2026 22:53:00] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 22:53:45,822 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:53:45,830 | INFO     | 127.0.0.1 - - [15/May/2026 22:53:45] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-15 22:54:35,955 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:54:37,127 | INFO     | Prediksi: sentimen=negatif aspek=kualitas_makanan conf=0.998
+2026-05-15 22:54:37,133 | INFO     | 127.0.0.1 - - [15/May/2026 22:54:37] "POST /predict HTTP/1.1" 200 -
+2026-05-15 22:54:56,539 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:54:57,176 | INFO     | Prediksi: sentimen=negatif aspek=program conf=0.999
+2026-05-15 22:54:57,177 | INFO     | 127.0.0.1 - - [15/May/2026 22:54:57] "POST /predict HTTP/1.1" 200 -
+2026-05-15 22:55:30,111 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:55:30,133 | INFO     | Prediksi: sentimen=netral aspek=program conf=0.955
+2026-05-15 22:55:30,134 | INFO     | 127.0.0.1 - - [15/May/2026 22:55:30] "POST /predict HTTP/1.1" 200 -
+2026-05-15 22:55:46,474 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:55:46,494 | INFO     | Prediksi: sentimen=positif aspek=program conf=0.998
+2026-05-15 22:55:46,495 | INFO     | 127.0.0.1 - - [15/May/2026 22:55:46] "POST /predict HTTP/1.1" 200 -
+2026-05-15 22:56:00,300 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-15 22:56:01,123 | INFO     | Prediksi: sentimen=positif aspek=program conf=0.998
+2026-05-15 22:56:01,124 | INFO     | 127.0.0.1 - - [15/May/2026 22:56:01] "POST /predict HTTP/1.1" 200 -
+2026-05-17 00:30:03,424 | INFO     | Memuat model dari disk ...
+2026-05-17 00:30:06,041 | INFO     |   ✔ XGBoost model dimuat
+2026-05-17 00:30:06,137 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-17 00:30:06,138 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-17 00:30:06,232 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-17 00:30:06,281 | INFO     |   ✔ Metadata dimuat (akurasi: 96.37%)
+2026-05-17 00:30:06,579 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-17 00:30:06,579 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-17 00:30:06,584 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-17 00:30:06,591 | INFO     | =======================================================
+2026-05-17 00:30:06,592 | INFO     |   ABSA MBG API Server
+2026-05-17 00:30:06,594 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-17 00:30:06,594 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-17 00:30:06,594 | INFO     | =======================================================
+2026-05-17 00:30:06,767 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.72:5000
+2026-05-17 00:30:06,768 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-17 00:30:49,717 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:30:49,738 | INFO     | 127.0.0.1 - - [17/May/2026 00:30:49] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-17 00:31:01,961 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:31:01,961 | INFO     | 127.0.0.1 - - [17/May/2026 00:31:01] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-17 00:31:16,780 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:31:16,781 | INFO     | 127.0.0.1 - - [17/May/2026 00:31:16] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-17 00:31:37,081 | INFO     | REQUEST GET / dari 127.0.0.1
+2026-05-17 00:31:37,088 | INFO     | 127.0.0.1 - - [17/May/2026 00:31:37] "GET / HTTP/1.1" 200 -
+2026-05-17 00:31:41,796 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:31:41,797 | INFO     | 127.0.0.1 - - [17/May/2026 00:31:41] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-17 00:33:46,989 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:33:48,038 | INFO     | Prediksi: sentimen=negatif aspek=kualitas_makanan conf=0.998
+2026-05-17 00:33:48,045 | INFO     | 127.0.0.1 - - [17/May/2026 00:33:48] "POST /predict HTTP/1.1" 200 -
+2026-05-17 00:34:03,748 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:34:03,834 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=1.000
+2026-05-17 00:34:03,835 | INFO     | 127.0.0.1 - - [17/May/2026 00:34:03] "POST /predict HTTP/1.1" 200 -
+2026-05-17 00:34:44,639 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:34:44,817 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=1.000
+2026-05-17 00:34:44,817 | INFO     | 127.0.0.1 - - [17/May/2026 00:34:44] "POST /predict HTTP/1.1" 200 -
+2026-05-17 00:36:34,830 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:36:35,671 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=1.000
+2026-05-17 00:36:35,677 | INFO     | 127.0.0.1 - - [17/May/2026 00:36:35] "POST /predict HTTP/1.1" 200 -
+2026-05-17 00:36:48,291 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:36:48,310 | INFO     | Prediksi: sentimen=netral aspek=umum conf=0.999
+2026-05-17 00:36:48,312 | INFO     | 127.0.0.1 - - [17/May/2026 00:36:48] "POST /predict HTTP/1.1" 200 -
+2026-05-17 00:37:12,260 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-17 00:37:12,355 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=0.999
+2026-05-17 00:37:12,356 | INFO     | 127.0.0.1 - - [17/May/2026 00:37:12] "POST /predict HTTP/1.1" 200 -
+2026-05-23 00:09:21,992 | INFO     | Memuat model dari disk ...
+2026-05-23 00:09:23,294 | INFO     |   ✔ XGBoost model dimuat
+2026-05-23 00:09:23,470 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-23 00:09:23,471 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-23 00:09:23,509 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-23 00:09:23,535 | INFO     |   ✔ Metadata dimuat (akurasi: 96.18%)
+2026-05-23 00:09:23,738 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-23 00:09:23,739 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-23 00:09:23,740 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-23 00:09:23,748 | INFO     | =======================================================
+2026-05-23 00:09:23,748 | INFO     |   ABSA MBG API Server
+2026-05-23 00:09:23,748 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-23 00:09:23,748 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-23 00:09:23,748 | INFO     | =======================================================
+2026-05-23 00:09:23,865 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.73:5000
+2026-05-23 00:09:23,866 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-23 00:09:56,714 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 00:09:56,749 | INFO     | 127.0.0.1 - - [23/May/2026 00:09:56] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-23 00:10:20,715 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 00:10:20,716 | INFO     | 127.0.0.1 - - [23/May/2026 00:10:20] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-23 00:10:39,818 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 00:10:39,824 | INFO     | 127.0.0.1 - - [23/May/2026 00:10:39] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-23 00:12:49,965 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 00:12:53,036 | INFO     | Prediksi: sentimen=negatif aspek=kualitas_makanan conf=0.998
+2026-05-23 00:12:53,052 | INFO     | 127.0.0.1 - - [23/May/2026 00:12:53] "POST /predict HTTP/1.1" 200 -
+2026-05-23 00:13:38,277 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 00:13:42,707 | INFO     | Prediksi: sentimen=negatif aspek=umum conf=1.000
+2026-05-23 00:13:42,719 | INFO     | 127.0.0.1 - - [23/May/2026 00:13:42] "POST /predict HTTP/1.1" 200 -
+2026-05-23 00:14:01,720 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 00:14:03,432 | INFO     | Prediksi: sentimen=positif aspek=kualitas_makanan conf=1.000
+2026-05-23 00:14:03,438 | INFO     | 127.0.0.1 - - [23/May/2026 00:14:03] "POST /predict HTTP/1.1" 200 -
+2026-05-23 18:17:31,192 | INFO     | Memuat model dari disk ...
+2026-05-23 18:17:33,727 | INFO     |   ✔ XGBoost model dimuat
+2026-05-23 18:17:33,860 | INFO     | FeatureBuilder dimuat dari d:\freecodecamp\mbg_project\models\feature_builder.pkl
+2026-05-23 18:17:33,861 | INFO     |   ✔ FeatureBuilder dimuat
+2026-05-23 18:17:33,889 | INFO     |   ✔ LabelEncoder dimuat: ['negatif', 'netral', 'positif']
+2026-05-23 18:17:33,902 | INFO     |   ✔ Metadata dimuat (akurasi: 96.18%)
+2026-05-23 18:17:34,054 | INFO     | Preprocessor siap. Stopword: 144 kata, Stemmer: Sastrawi
+2026-05-23 18:17:34,054 | INFO     |   ✔ Preprocessor & Labeler siap
+2026-05-23 18:17:34,055 | INFO     | Semua komponen model berhasil dimuat.
+2026-05-23 18:17:34,057 | INFO     | =======================================================
+2026-05-23 18:17:34,057 | INFO     |   ABSA MBG API Server
+2026-05-23 18:17:34,057 | INFO     |   URL: http://0.0.0.0:5000
+2026-05-23 18:17:34,057 | INFO     |   Docs: http://localhost:5000/docs
+2026-05-23 18:17:34,057 | INFO     | =======================================================
+2026-05-23 18:17:34,127 | INFO     | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.4:5000
+2026-05-23 18:17:34,127 | INFO     | [33mPress CTRL+C to quit[0m
+2026-05-23 18:19:07,471 | INFO     | REQUEST POST /predict dari 127.0.0.1
+2026-05-23 18:19:07,945 | INFO     | Prediksi: sentimen=negatif aspek=kualitas_makanan conf=0.998
+2026-05-23 18:19:07,953 | INFO     | 127.0.0.1 - - [23/May/2026 18:19:07] "POST /predict HTTP/1.1" 200 -

@@ -1,0 +1,13 @@
+execution_duration_ms: 1395
+request_preview: '{"query": "How do I use mlflow.evaluate() to assess my LLM''s output
+  quality?"}'
+request_time: '2026-05-06T04:48:57.454Z'
+response_preview: '{"response": "MLflow has an evaluate() function. You pass it some
+  data and scorers and it gives you back metrics. The results are logged automatically
+  I think."}'
+state: OK
+trace_id: tr-92b4606dabeb5fd7583a507db93d212d
+trace_location:
+  mlflow_experiment:
+    experiment_id: '121770919723884746'
+  type: MLFLOW_EXPERIMENT
