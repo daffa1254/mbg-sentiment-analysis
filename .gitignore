@@ -7,13 +7,8 @@ __pycache__/
 *.zip
 *.rar
 
-# model besar
-*.pkl
-
-# cache
-.cache/
-
 mlruns/
+.cache/
 *.png
 *.ubj
 *.pkl
