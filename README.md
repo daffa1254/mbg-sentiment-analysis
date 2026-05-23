@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎯 ABSA MBG — Aspect-Based Sentiment Analysis
 
 ## Komentar YouTube Program Makan Bergizi Gratis (MBG)
@@ -260,3 +261,18 @@ Dataset CSV
 ```
 
 ---
+=======
+---
+title: MBG Sentimen
+emoji: 💻
+colorFrom: gray
+colorTo: pink
+sdk: gradio
+sdk_version: 6.14.0
+python_version: '3.13'
+app_file: app.py
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> c534b0d9cf39c0ea880e54d636f89c41c925fdac
