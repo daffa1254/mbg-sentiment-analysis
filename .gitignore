@@ -3,6 +3,12 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .env
-.DS_Store
 *.csv
-models/
+*.zip
+*.rar
+
+# model besar
+*.pkl
+
+# cache
+.cache/

@@ -1,0 +1,28 @@
+artifact_path: file:///d:/freecodecamp/mbg_project/mlruns/336977329135206848/models/m-925623a940c7447bb178aa001c9224e0/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.2
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.0.2
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-925623a940c7447bb178aa001c9224e0
+model_size_bytes: 1527027
+model_uuid: m-925623a940c7447bb178aa001c9224e0
+prompts: null
+run_id: 8a9999438fc94e9a865e1d96522fb552
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 6012]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-05-15 15:50:11.573313'
